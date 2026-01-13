@@ -3,16 +3,16 @@
 Guide for installing **Alpine Linux** on **PC Engines APU3** series boards **without flashing or updating the BIOS to UEFI**.  
 Uses only **official published Alpine Linux images** and keeps the original factory legacy BIOS (MBR).
 
-![PC Engines APU3 board](https://www.pcengines.ch/images/apu3.jpg)  
+![PC Engines APU3 board](https://www.pcengines.ch/apu.htm)  
 *Typical PC Engines APU3 – AMD GX-412TC, 3× GbE, mSATA, fanless, serial console only.*
 
 ## Project Goal
 
-This installation guide deliberately **avoids the upgrade to a UEFI BIOS** to keep things simple, reversible, and close to factory state:
+This installation guide deliberately **avoids the upgrade to a UEFI BIOS** to keep things simple and close to factory state:
 
-- Boot official Alpine extended ISO via legacy BIOS.
+- Boot official Alpine Linux extended ISO via legacy BIOS.
 - Install to mSATA/SSD in **sys** mode 
-- Minimal, secure, lightweight setup ideal for routers, firewalls, servers, or homelabs.
+- Minimal, secure, lightweight setup for routers, firewalls, servers, or homelabs.
 
 Tested with recent Alpine version (3.23 as of 2026).
 
@@ -47,7 +47,7 @@ Full details & exact commands → see the linked manual above.
 
 ## Requirements
 
-- PC Engines APU3 board
+- PC Engines APU3 board with mSATA or microSD card
 - USB stick (≥1 GB)
 - USB-to-serial adapter + cable (DB9)
 - Terminal emulator on host PC
@@ -63,10 +63,7 @@ Use, modify, share freely — no attribution required.
 
 ## Contributing
 
-Spotted a typo, better screenshot, missing step, or APU3-specific tip (e.g., COM2 usage, mPCIe WiFi config)?  
+Spotted a typo, better screenshot, missing step, or APU3-specific tip (e.g., mPCIe WiFi config)?  
 Issues and pull requests welcome!
 
 Maintained by Huub – Leiden, NL (2026)  
-Questions? Open an issue.
-
-Happy routing & hacking! 🚀
